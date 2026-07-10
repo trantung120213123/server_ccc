@@ -1,0 +1,21 @@
+{
+  "name": "cpp-online-backend",
+  "version": "1.0.0",
+  "description": "Remote C++ compile/run API for Code Online.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "nanoid": "^5.0.7",
+    "socket.io": "^4.8.3"
+  }
+}

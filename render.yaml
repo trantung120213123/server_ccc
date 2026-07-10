@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: cpp-online-backend
+    env: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: COMPILE_TIMEOUT_MS
+        value: 30000
+      - key: RUN_TIMEOUT_MS
+        value: 10000
